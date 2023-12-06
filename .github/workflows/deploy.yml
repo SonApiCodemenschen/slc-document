@@ -1,0 +1,29 @@
+name: Deploy Next.js Project
+
+on:
+  push:
+    branches:
+      - main # Đặt branch mà bạn muốn trigger workflow này
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to Another Branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: deploy # Đặt tên branch mà bạn muốn deploy đến
+          publish_dir: ./build # Đường dẫn tới thư mục build của Next.js
