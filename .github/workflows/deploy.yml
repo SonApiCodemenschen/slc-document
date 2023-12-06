@@ -7,7 +7,7 @@ on:
 
 permissions:
   contents: write
-
+  
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -27,5 +27,6 @@ jobs:
       - name: Deploy to Another Branch
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.YOUR_PAT_SECRET }}
+          publish_branch: deploy-pages # Đặt tên branch mà bạn muốn deploy đến
           publish_dir: ./build # Đường dẫn tới thư mục build của Next.js
