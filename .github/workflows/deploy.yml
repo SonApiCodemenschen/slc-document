@@ -21,8 +21,8 @@ jobs:
         run: npm run build
 
       - name: Deploy to Another Branch
-        uses: peaceiris/actions-gh-pages@v3
+        uses: actions/checkout@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.YOUR_PAT_SECRET }}
           publish_branch: deploy # Đặt tên branch mà bạn muốn deploy đến
           publish_dir: ./build # Đường dẫn tới thư mục build của Next.js
