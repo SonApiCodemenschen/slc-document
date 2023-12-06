@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - master # Đặt branch mà bạn muốn trigger workflow này
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
