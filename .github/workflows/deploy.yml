@@ -1,4 +1,4 @@
-name: Deploy Next.js Project
+name: Deploy SLC-document Project
 
 on:
   push:
@@ -28,5 +28,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.YOUR_PAT_SECRET }}
-          publish_branch: deploy-pages # Đặt tên branch mà bạn muốn deploy đến
           publish_dir: ./build # Đường dẫn tới thư mục build của Next.js
