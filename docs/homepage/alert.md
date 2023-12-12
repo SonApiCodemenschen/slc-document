@@ -29,7 +29,7 @@ sidebar_position: 3
 > | `400`         | `application/json`                | `{"code":"400","message":"Bad Request"}`                            |
 > | `200`         | `text/plain;charset=UTF-8`        | `json data`                                                         |
 
-```javascript title="JSON DATA"
+```javascript title="JSON DATA" {13,14,15} showLineNumbers
 [
     {
         "id": 152544,
@@ -42,13 +42,15 @@ sidebar_position: 3
         "max_heart_rate": "200.00",
         "birthday": "2001-02-14",
         "ignore_velocity": null,
+        "injury_risk": {},
+        "score": {},
+        "ac": [],
         "need_for_speed": {
             "18495": null,
             "3382": null,
             "3375": null
         },
         "jersey": "12",
-        "ac": [],
         "option": 1062,
         "sleep": null,
         "stress": null,
