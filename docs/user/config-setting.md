@@ -1,12 +1,12 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# User config set API
+# User config get API
 
 <details open>
 <summary>
-  <code>POST</code> <code><b>/api/user-config/set</b></code>
+  <code>GET</code> <code><b>/api/user-config</b></code>
 </summary>
  
 ##### Headers
@@ -14,12 +14,6 @@ sidebar_position: 1
 > |-----------|-----------|-------------------------|-----------------------------------------------------------------------|
 > | Authorization      |  required | String   | `Bearer <Access Token>`  |
 > | Content-Type      |  required | String   | `application/json`  |
-
-##### Parameters
-
-> | name      |  type     | data type               | description                                                           |
-> |-----------|-----------|-------------------------|-----------------------------------------------------------------------|
-> | items      |  required | Array   | `[{"key": "alert_widget_display_playing_time","value": 1}, /*...*/]`  |
 
 
 ##### Responses
@@ -31,7 +25,10 @@ sidebar_position: 1
 
 ```javascript title="JSON DATA"
 {
-    "status": "succeed" /* failed */
+    "status": "succeed", /* failed */
+    "data": {
+
+    }
 }
 ```
 </details>
