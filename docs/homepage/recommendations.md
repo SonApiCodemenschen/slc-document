@@ -29,7 +29,7 @@ sidebar_position: 4
 > | `400`         | `application/json`                | `{"code":"400","message":"Bad Request"}`                            |
 > | `200`         | `text/plain;charset=UTF-8`        | `json data`                                                         |
 
-```javascript title="JSON DATA"
+```javascript title="JSON DATA" {19-22,28,29-71} showLineNumbers
 [
     {
         "id": 152544,
@@ -48,11 +48,59 @@ sidebar_position: 4
             {
                 "accr_ratio": 0,
                 "parameter_id": 3374,
+                "parameter": {
+                    "id": 3374,
+                    "name": "Distance"
+                },
                 "type": "alert",
                 "kind": "AC:CR",
                 "message": "AC:CR workload is too low. Increase the load for this player for the next sessions"
             }
         ],
+        "recovery_level": 100,
+        "injury_risk": {
+            "wellness_score": {
+                "value": false,
+                "level": "high",
+                "score": 3
+            },
+            "need_for_speed": {
+                "value": 75,
+                "level": "high",
+                "score": 3
+            },
+            "age_of_players": {
+                "value": 27,
+                "level": "low",
+                "score": 1
+            },
+            "acwr_hir": {
+                "value": 0,
+                "level": "mid",
+                "score": 2
+            },
+            "acwr_sprints": {
+                "value": 0,
+                "level": "mid",
+                "score": 2
+            },
+            "acwr_total_distance": {
+                "value": 0,
+                "level": "mid",
+                "score": 2
+            },
+            "acwr_accelerations": {
+                "value": 0,
+                "level": "mid",
+                "score": 2
+            },
+            "ck": {
+                "score": null,
+                "value": null,
+                "color": "#fff",
+                "level": "mid"
+            }
+        },
         "option": 1062,
         "photo_url": "https:\/\/speed.soccer-load-calculator.com\/uploads\/450\/CQFaZ2LzyBugCbS7w3MXlrsIbPAYPQMGpBJUdS5z.png",
         "name": "Lennart Grill",
