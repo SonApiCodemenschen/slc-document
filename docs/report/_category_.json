@@ -1,6 +1,6 @@
 {
-  "label": "Home",
-  "position": 3,
+  "label": "Report an Issue",
+  "position": 1,
   "link": {
     "type": "generated-index",
     "description": "5 minutes to learn the most important Docusaurus concepts."
