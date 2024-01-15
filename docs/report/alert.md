@@ -6,8 +6,8 @@ sidebar_position: 3
 
 <details open>
 <summary>
-  <code>GET</code> <code><b>/api/widgets/alert</b></code>
-  ###### tài khoản: TSVHartberg
+  <code>GET</code> <code><b>/widgets/alert</b></code>
+  ###### Tài khoản: TSVHartberg
 </summary>
 <code>
 * Vấn đề xảy ra: Lỗi loop truy vấn SQL gây chậm
